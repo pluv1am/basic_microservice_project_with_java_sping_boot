@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+          integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+</head>
+
+<body>
+<div class="container h-100">
+    <div class="row d-flex h-100 justify-content-between align-items-center">
+        <div class="col-5 border p-5 m-2 h-100 text-center
+            ">
+            <h2>Hesap Makinesi</h2>
+
+            <form action="/calculate" method="post" id="form">
+                <label for="number1">First Number</label><br>
+                <input type="number" id="number1" name="number1" value="10"><br>
+                <label for="number2">Second Number</label><br>
+                <input type="number" id="number2" name="number2" value="42"><br>
+                <label>İşlem:</label><br>
+                <input type="radio" id="toplama" name="islem" value="toplama" checked="True">
+                <label for="toplama">Toplama</label><br>
+                <input type="radio" id="cikarma" name="islem" value="cikarma">
+                <label for="cikarma">Çıkarma</label><br>
+                <input type="radio" id="carpma" name="islem" value="carpma">
+                <label for="carpma">Çarpma</label><br>
+                <input type="radio" id="bolme" name="islem" value="bolme">
+                <label for="bolme">Bölme</label><br>
+                <br>
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+
+        <div class="col-5 border p-5 m-2 h-100 text-center">
+            <h2>Hava durumu</h2>
+            <form action="/hava" method="post" id="form2">
+                <label for="sehir">Şehir</label><br>
+                <input type="text" id="sehir" name="sehir" value="Ankara"><br>
+
+                <br>
+                <input type="submit" value="Submit">
+
+            </form>
+        </div>
+    </div>
+</div>
+
+
+
+</body>
+
+</html>
