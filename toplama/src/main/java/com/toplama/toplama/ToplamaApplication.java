@@ -16,7 +16,7 @@ public class ToplamaApplication {
 	}
 
 	@GetMapping("/hesap")
-	public String topla(@RequestParam(value = "num1", defaultValue = "3") int num1, @RequestParam(value="num2", defaultValue = "5") int num2, @RequestParam(value = "islem", defaultValue = "toplama") String islem) {
+	public String topla(@RequestParam(value = "num1", defaultValue = "13") int num1, @RequestParam(value="num2", defaultValue = "57") int num2, @RequestParam(value = "carpma", defaultValue = "carpma") String islem) {
 
 		if(islem.equals("toplama")){
 			return String.format("%d %s %d = %d", num1,"+", num2, num1+num2);
